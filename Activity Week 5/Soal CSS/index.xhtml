@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservation Hotel Room</title>
+
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      background-color: #fff;
+      width: 600px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    fieldset {
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fafafa;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #444;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357abd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="" method="post">
+    <h2>Reservation Hotel Room</h2>
+
+    <fieldset>
+      <legend>Personal Data</legend>
+
+      <p>1. Name<br />
+      <input type="text" name="name" /></p>
+
+      <p>2. Gender<br />
+      <input type="text" name="gender" /></p>
+
+      <p>3. Email Address<br />
+      <input type="text" name="email" /></p>
+
+      <p>4. Telp Number<br />
+      <input type="text" name="phone" /></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Reservation Room Form</legend>
+
+      <p>1. Reservation Name<br />
+      <input type="text" name="reservation_name" /></p>
+
+      <p>2. Booking Date<br />
+      <input type="text" name="booking_date" /></p>
+
+      <p>3. Room Type<br />
+      <select name="room_type">
+        <option>Deluxe</option>
+        <option>Suite</option>
+        <option>Executive</option>
+        <option>Standard</option>
+      </select></p>
+
+      <p>4. Bed Type<br />
+      <select name="bed_type">
+        <option>Single bed</option>
+        <option>Double bed</option>
+      </select></p>
+
+      <p>5. Breakfast<br />
+      <input type="radio" name="breakfast" value="With Breakfast" /> With Breakfast
+      <input type="radio" name="breakfast" value="Without Breakfast" /> Without Breakfast
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Payment</legend>
+
+      <p>1. Check In Date<br />
+      <input type="text" name="checkin_date" /></p>
+
+      <p>2. Check Out Date<br />
+      <input type="text" name="checkout_date" /></p>
+
+      <p>3. Payment Method<br />
+      <select name="payment_method">
+        <option>Cash</option>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+      </select></p>
+    </fieldset>
+
+    <p><input type="submit" value="Submit" /></p>
+  </form>
+
+</body>
+</html>
